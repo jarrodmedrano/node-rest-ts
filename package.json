@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/express-handlebars": "0.0.30",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "mongoose": "^5.4.13"
