@@ -23,9 +23,10 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 //Routes
-
+app.get('/books',(req, res) => res.send('Books'));
 
 //Static Files
+app.use(express.static(path.join(__dirname, 'public')));
 
 //Starting the server
 app.listen(app.get('port'), () => {
