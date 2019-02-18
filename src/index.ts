@@ -2,6 +2,9 @@ import express from 'express';
 import exphbs from 'express-handlebars';
 import path from 'path';
 
+//Importing Routes
+import IndexRoutes from './routes';
+
 //Initializations
 const app = express();
 
