@@ -4,6 +4,7 @@ import path from 'path';
 
 //Importing Routes
 import IndexRoutes from './routes';
+import BooksRoutes from './routes/books';
 
 //Initializations
 const app = express();
@@ -27,7 +28,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 //Routes
-app.use('/books', IndexRoutes);
+app.use(IndexRoutes);
+app.use('/books', BooksRoutes);
 
 //Static Files
 app.use(express.static(path.join(__dirname, 'public')));
