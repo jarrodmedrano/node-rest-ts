@@ -1,12 +1,12 @@
-import mongoose, {Schema, model} from 'mongoose';
+import mongoose, { Schema, model } from 'mongoose';
 
-interface Book extends mongoose.Document {
+export interface Book extends mongoose.Document {
     title: string;
     author: string;
     isbn: string;
-}
+};
 
-const BookSchema =  new Schema({
+const BookSchema = new Schema({
     title: String,
     author: String,
     isbn: String
