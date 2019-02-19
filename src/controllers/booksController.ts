@@ -13,6 +13,11 @@ class BooksController {
             title: 'Add A Book'
         });
     }
+
+    public saveBook(req: Request, res: Response) {
+        console.log(req.body);
+        res.send("received");
+    }
 }
 
 export const booksController =  new BooksController();
